@@ -1,0 +1,57 @@
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif; /* Police de caractères pour le corps */
+    background-color: #f4f4f4; /* Couleur de fond */
+    margin: 0; /* Pas de marge par défaut */
+    padding: 20px; /* Espacement intérieur */
+}
+
+/* Styles pour le conteneur */
+.container {
+    max-width: 600px; /* Largeur maximale du conteneur */
+    margin: auto; /* Centre le conteneur */
+    padding: 20px; /* Espacement intérieur */
+    background-color: #ffffff; /* Couleur de fond blanc */
+    border-radius: 8px; /* Bords arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Styles pour les groupes de formulaire */
+.form-group {
+    margin-bottom: 15px; /* Espacement entre les champs de formulaire */
+}
+
+/* Styles pour les champs de formulaire */
+input[type="text"], select {
+    width: 100%; /* Largeur de 100% */
+    padding: 10px; /* Espacement intérieur */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 4px; /* Bords arrondis */
+}
+
+/* Styles pour les boutons de soumission */
+input[type="submit"] {
+    background-color: #4CAF50; /* Couleur de fond verte */
+    color: white; /* Couleur du texte */
+    padding: 10px; /* Espacement intérieur */
+    border: none; /* Pas de bordure */
+    border-radius: 4px; /* Bords arrondis */
+    cursor: pointer; /* Curseur pointer au survol */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Couleur de fond au survol */
+}
+
+/* Styles pour les liens */
+.link {
+    display: inline-block; /* Permet de traiter le lien comme un bouton */
+    margin-top: 20px; /* Espacement au-dessus du lien */
+    color: #4CAF50; /* Couleur du lien */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: bold; /* Gras pour le lien */
+}
+
+.link:hover {
+    text-decoration: underline; /* Souligne le lien au survol */
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Change</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .even {
+            background-color: #d3f9d8; /* Vert pâle */
+        }
+        .odd {
+            background-color: #f9d3d3; /* Rouge pâle */
+        }
+        p {
+            font-size: 18px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+    </style>
+</head>
+<body class="{{if .IsEven}}even{{else}}odd{{end}}">
+    <div class="container">
+        <h1>{{.Message}}</h1>
+        <p>Actualisez la page pour voir le compteur changer.</p>
+    </div>
+</body>
+</html>

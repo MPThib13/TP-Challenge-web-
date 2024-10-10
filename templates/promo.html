@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classe {{.Nom}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #007bff;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Informations de la classe {{.Nom}}</h1>
+    <p>Filière : {{.Filiere}}</p>
+    <p>Niveau : {{.Niveau}}</p>
+    <p>Nombre d'étudiants : {{.NombreEtudiants}}</p>
+    <h2>Liste des étudiants :</h2>
+    <ul>
+        {{range .Etudiants}}
+        <li>
+            {{.Prenom}} {{.Nom}}, Age : {{.Age}}, Sexe :
+            {{if eq .Sexe "male"}}<img src="/static/img/male.png" alt="Homme">{{else}}<img src="/static/img/female.png" alt="Femme">{{end}}
+        </li>
+        {{end}}
+    </ul>
+</body>
+</html>

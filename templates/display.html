@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations Utilisateur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+        .link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Informations Utilisateur</h1>
+        <div class="info">
+            <p><strong>Nom :</strong> {{.Nom}}</p>
+            <p><strong>Prénom :</strong> {{.Prenom}}</p>
+            <p><strong>Date de Naissance :</strong> {{.DateNaissance}}</p>
+            <p><strong>Sexe :</strong> {{.Sexe}}</p>
+        </div>
+        <a class="link" href="/user/form">Retour au formulaire</a>
+        <a class="link" href="/promo">Retour à la Promo</a>
+    </div>
+</body>
+</html>
